@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.version     = Decidim::UsersActivityReport::VERSION
   spec.authors     = ["VictorJorgeFGA"]
   spec.email       = ["victor.eng.unb@gmail.com"]
-  spec.homepage    = "TODO"
+  spec.homepage    = "https://gitlab.com/lappis-unb/decidimbr/decidim-users_activity_report"
   spec.summary     = "Add users activity report to participatory spaces."
   spec.license     = "AGPLv3"
   spec.description =
@@ -26,8 +26,8 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir["{app,config,db,lib}/**/*", "LICENSE-AGPLv3.txt", "Rakefile", "README.md"]
 
-  s.add_dependency "decidim-admin", Decidim::UsersActivityReport::COMPAT_DECIDIM_VERSION
-  s.add_dependency "decidim-core", Decidim::UsersActivityReport::COMPAT_DECIDIM_VERSION
+  spec.add_dependency "decidim-admin", Decidim::UsersActivityReport::COMPAT_DECIDIM_VERSION
+  spec.add_dependency "decidim-core", Decidim::UsersActivityReport::COMPAT_DECIDIM_VERSION
 
-  s.add_development_dependency "decidim-dev", Decidim::UsersActivityReport::COMPAT_DECIDIM_VERSION
+  spec.add_development_dependency "decidim-dev", Decidim::UsersActivityReport::COMPAT_DECIDIM_VERSION
 end
